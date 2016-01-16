@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/setting_alarm_title" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="initial_alarm"
+            android:summary="@string/setting_alarm_initial_description"
+            android:title="@string/setting_alarm_initial_title" />
+
+        <CheckBoxPreference
+            android:key="final_alarm"
+            android:defaultValue="true"
+            android:summary="@string/setting_alarm_final_description"
+            android:title="@string/setting_alarm_final_title" />
+
+        <com.extra.invisalign.view.TimeLimitPreference
+            android:key="timecap_aday"
+            android:defaultValue="7200000"
+            android:title="@string/setting_alarm_time_cap_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_notification_title" >
+
+        <CheckBoxPreference
+            android:key="clock_notification"
+            android:defaultValue="true"
+            android:summary="@string/setting_notification_alwayson_description"
+            android:title="@string/setting_notification_alwayson_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
